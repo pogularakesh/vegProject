@@ -1,0 +1,22 @@
+<h1>vegetables</h1>
+<div class="container">
+  <div class="card-columns">
+    <div class="col-md-6" *ngFor="let v of veg">
+      
+      <div class="card" style="width:400px">
+        <img class="card-img-top"  [src]="v.vimage" id="image">
+     
+        <div class="card-body">
+          <h4 class="card-title">{{v.vname}}</h4>
+          <p class="card-text">price :{{v.price}}</p>
+          <!-- <p class="card-text">quantity :{{v.quantity}}</p> -->
+          <!-- <a class="btn btn-primary" (click)="detailsClick(v.vid)">See Profile</a> -->
+
+         <!-- <button type="button" class="btn btn-default"(click)="detailsClick(v.vid)">Details</button> -->
+         <!-- <button class="bg-info" (click)="addCart(v.vid)">Add to Cart</button> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

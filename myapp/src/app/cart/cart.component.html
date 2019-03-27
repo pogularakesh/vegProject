@@ -1,0 +1,23 @@
+<h2>my cart</h2>
+<table class="table">
+  <tr *ngFor="let a of cart">
+    <td>
+      {{a.vname}}
+    </td>
+    <td>
+      <img [src]="a.vimage" height="100px" width="100px" />
+    </td>
+    <td>
+      {{a.quantity}}
+    </td>
+    <td>
+      {{a.price}}
+    </td>
+    <td>
+      {{a.discount}}
+    </td>
+    <td>
+      <button (click)="btnDel(a.vid)" class="bg-danger">Delete</button>
+    </td>
+  </tr>
+</table>

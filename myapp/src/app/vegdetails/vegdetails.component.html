@@ -1,0 +1,33 @@
+
+<h1>Vegetable Details :</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-3">
+      <form #myfrm="ngForm">      
+        <div class="form-group">
+          <label for="">Vegetable Name  :</label>
+           {{veg.vname}}
+        </div>
+        <div class="form-group">
+          <label for="">Quantity  :</label>
+          {{veg.quantity}}
+        </div>
+        <div class="form-group">
+          <label for="">Price  :</label>
+          {{veg.price}}
+        </div>
+        <div class="form-group">
+          <label for="">Discount  :</label>
+         {{veg.discount}}
+        </div>
+        
+        <!-- <div class="form-group">
+          <label for="">Pimage:</label>
+          <img class="card-img-top"  [src]="a.pimage" id="image">
+        {{plyr.pimage}}
+        </div> -->
+        <!-- <button type="button" class="btn btn-primary" (click)="Submitclick(myfrm)">Submit</button> -->
+      </form>
+    </div>
+  </div>
+</div>

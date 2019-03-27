@@ -1,0 +1,27 @@
+<h3>VEGETABLES</h3>
+<!-- <div *ngIf="veg"> -->
+<table class="table">
+  <tr>
+    <th>veg.id</th>
+    <th>veg.name</th>
+    <th>veg.image</th>
+    <th>quantity</th>
+    <th>price</th>
+    <th>discount</th>
+  </tr>
+  <tr *ngFor="let v of veg">
+    <td>{{v.vid}}</td>
+    <td>{{v.vname}}</td>
+    <td><img [src]=" v.vimage" height="100px" width="100px"></td>
+    <td>{{v.quantity}}</td>
+    <td>{{v.price}}</td>
+    <td>{{v.discount}}</td>
+    
+   <td>
+      <button (click)="btnDel(v.vid)" class="btn btn-danger">DELETE</button>
+      <button (click)="btnEditClick(v.vid)" class="btn btn-success">EDIT</button>
+
+    </td>
+  </tr>
+</table>  
+<!-- </div> -->

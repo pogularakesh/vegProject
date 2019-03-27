@@ -1,0 +1,91 @@
+<div>
+  <img src="../assets/22.jpg" width="100%" height="300px"/>
+</div>
+<div style="background-color: skyblue">
+    <b style="font-size: larger;color:cornsilk;font-style:italic " ><h1><b>Online Veg Market</b></h1></b>
+</div>
+
+  <div>
+  <nav id="nav" class="navbar navbar-expand-sm bg-primary navbar-dark" style="height: 80px">
+
+      <i class="glyphicon glyphicon-"></i>
+       <!-- <a class="navbar-brand" href="#">
+          <p style="font-size: 20px">PRO</p>
+      </a> -->
+      <a class="navbar-brand" routerLink="vegetables">
+          <img src="../assets/22.jpg" alt="logo" style="width:40px;">
+        </a>
+      <ul id="ul" class="navbar-nav">
+        <li *ngIf="!lgstatus && adstatus" class="nav-link">
+          <a routerLink="addveg" class="nav-link"><img src="../assets/add.jpg" height="50px" width="200px"></a>
+        </li>
+        <li *ngIf="lgstatus" class="nav-link">
+            <a routerLink="cart" class="nav-link"><img src="../assets/mycart.jpg" height="50px" width="200px"></a>
+          </li>
+        <li *ngIf="!lgstatus && adstatus" class="nav-link">
+            <a routerLink="showall" class="nav-link"><img src="../assets/showall.png" height="50px" width="200px"></a>
+          </li>
+          <li *ngIf="lgstatus" class="nav-link">
+            <a routerLink="home" class="nav-link"><img src="../assets/HOME-rgb.jpg" height="50px" width="200px"></a>
+          </li>
+          <li *ngIf="lgstatus" class="nav-link">
+            <a routerLink="contact" class="nav-link"><img src="../assets/contact_us_banner1.jpg" height="50px" width="200px"></a>
+          </li>
+          <!-- <li *ngIf="!lgstatus && !adstatus" class="nav-link">
+            <a routerLink="register" class="nav-link">Register</a>
+          </li> -->
+          <li *ngIf="!lgstatus && !adstatus" class="nav-link">
+            <a routerLink="register" class="nav-link"><img src="../assets/registerhere.jpeg" height="50px" width="200px"></a>
+          </li>
+          <li *ngIf="!lgstatus && !adstatus" class="nav-link">
+            <a routerLink="ulogin" class="nav-link"><img src="../assets/images.jpg" height="50px" width="200px"></a>
+          </li>
+          <li *ngIf="!lgstatus && !adstatus" class="nav-link">
+            <a routerLink="login" class="nav-link"><img src="../assets/admin20.png" height="50px" width="200px"> </a>
+          </li>
+          <li *ngIf="lgstatus || adstatus" class="nav-item">
+            <a class="nav-link" (click)="LogOutClick()"><img src="../assets/log out.jpg" height="50px" width="200px"></a>
+        </li>
+          <!-- <li *ngIf="lgstatus" class="nav-item">
+              <a class="nav-link"  routerLink="home">Home</a>
+          </li>
+          <li *ngIf="!lgstatus && adstatus" class="nav-item">
+              <a class="nav-link" routerLink="ShowAll">ShowAll</a>
+          </li>
+          <li *ngIf="lgstatus" class="nav-item">
+              <a class="nav-link" routerLink="Schedule">Schedule</a>
+          </li>
+          <li *ngIf="!lgstatus && !adstatus" class="nav-item">
+              <a class="nav-link" routerLink="register">Register</a>
+          </li>
+
+          <li *ngIf="!lgstatus && !adstatus" class="nav-item">
+              <a class="nav-link" routerLink="login">admin Login</a>
+          </li>
+          <li *ngIf="!lgstatus && !adstatus" class="nav-item">
+              <a class="nav-link" routerLink="ulogin">user Login</a>
+          </li>
+          <li *ngIf="!lgstatus && adstatus" class="nav-item">
+              <a class="nav-link" routerLink="players">Add Player</a>
+          </li>
+          <li *ngIf="lgstatus" class="nav-item">
+              <a class="nav-link" routerLink="teams">Teams</a>
+          </li>
+          <li *ngIf="!lgstatus && adstatus" class="nav-item">
+              <a class="nav-link" routerLink="addschedule">Add Schedule</a>
+          </li>
+
+          <li *ngIf="lgstatus || adstatus" class="nav-item">
+              <a class="nav-link" (click)="LogOutClick()">LogOut</a>
+          </li> -->
+      </ul>
+
+  </nav>
+</div> 
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+<div style="background-color: rgb(6, 127, 248);height: 35px;width: 100%">
+
+</div>
